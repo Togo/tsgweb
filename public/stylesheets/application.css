@@ -46,7 +46,7 @@ header h1#logo {
 }
 header h1#logo a {
 	position: absolute;
-	top: 105px;
+	top: 60px;
 	left: 113px;
 	font: normal 60px Georgia, 'Times New Roman', Times, serif;
 	letter-spacing: -3px;
@@ -158,8 +158,10 @@ footer p {
 /* News Style */ 
 
 #body_content .news_item_truncated {
-	padding: 0px 10;
-	margin-bottom: 20px;
+	padding: 0px 10px;
+	margin: 20px;
+	border: 1px solid #F0F0F0;
+	background: #f8f8f8;
 }
 
 #body_content .news_item_truncated h3 {
