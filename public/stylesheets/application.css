@@ -3,3 +3,154 @@
   Formatting applies to all frontend.
 */
 
+/* Body */
+body {
+  font: 11px/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  color: #666666; 
+  margin: 0; 
+  padding: 0 0 50px 0; 
+  background: #F6F5F5 url(../images/bg.gif) repeat-x;
+}
+
+#body_content {
+  background: #fff;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 5px 0;
+	
+}
+
+#body_content #body_content_left {
+}
+
+#body_content #body_content_right {
+}
+
+/* HEADER */
+
+header {
+	margin-top: 10px;
+	height: 255px;
+    background-repeat: no-repeat;
+	}
+
+header #logo {
+		border-bottom: 5px solid #376828;
+		margin: 0 0 0 0;
+}
+
+header h1#logo { 
+	margin: 10 0 0 0; 
+	padding: 0;
+	height: 200px;
+	background-image: url(http://tsgweb.herokuapp.com/system/images/BAhbBlsHOgZmSSIrMjAxMS8wNy8xNC8xNS8wMi8wMi82NDAvdHNnX2hlYWRlci5wbmcGOgZFVA/tsg-header.png);	
+}
+header h1#logo a {
+	position: absolute;
+	top: 105px;
+	left: 113px;
+	font: normal 60px Georgia, 'Times New Roman', Times, serif;
+	letter-spacing: -3px;
+	color: #376828;
+	text-decoration: none;
+}
+#header h1#logo a:hover { border: none; }
+
+/* Links */
+a:link, a:visited { 
+	text-decoration: none;
+	color: #AE855C;	
+}
+a:hover {
+	border-bottom: 1px dotted #AE855C;	
+}
+a.more {
+	padding-bottom: 2px;
+	font-weight: bold;	
+	border-bottom: 1px dotted #AE855C;	
+}
+a:hover.more {
+	text-decoration: none;
+}
+
+/* Navigation */ 
+.menu ul {
+	height: 45px;
+	margin: 5px 0 0 0;
+	padding: 0 0 0 15px;
+
+}
+.menu li {
+  padding: 0px;
+  margin: 0px 9px 0px 0px;
+  list-style: none;
+  float: left;
+}
+
+.menu li a {
+	margin: 0;
+	padding: 15px 15px 10px 10px;
+	color: #666666;
+	font: bold 15px/40px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;
+	text-transform: uppercase;
+}
+
+.menu li a:hover, 
+.menu li a:active {
+	border: none;
+	color: #111;
+	background: transparent;
+}
+.menu li.last {
+  margin-right: 0px;
+}
+
+.menu li.selected > a {
+  color: #444;
+  background: #fff;
+  border-bottom: 3px solid #376828;
+}
+
+/* body content */
+#body_content p {
+	padding: 0  0 5px 10px;
+}
+#body_content h1 {
+	font: normal 3.7em Georgia, 'Times New Roman', Times, Serif;
+	color: #444;
+	letter-spacing: -2.2px;
+	margin-top: 0.3em;	
+	margin-left: 5px;	
+	margin-right: 15px;
+	margin-bottom: 0.2em;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ebebeb;	
+}
+#body_content h1 a {
+	color: #444;
+	border: none;
+}
+
+#body_content_left {
+  float: left;
+  width: 599px;
+  border-right: 1px solid #ebebeb;
+}
+#body_content_right {
+  float: right;
+  width: 400px;	
+}
+#body_content_left .inner {
+  padding-right: 10px;
+}     
+#body_content_right .inner {
+  padding-left: 10px;
+}
+
+/* Footer */
+
+footer p {
+	padding-left: 35%;
+	margin-top: 0px;
+}
+
