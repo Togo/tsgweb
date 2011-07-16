@@ -42,8 +42,7 @@ header h1#logo {
 	margin: 10 0 0 0; 
 	padding: 0;
 	height: 200px;
-/*	background-image: url(http://tsgweb.herokuapp.com/system/images/BAhbBlsHOgZmSSIrMjAxMS8wNy8xNC8xNS8wMi8wMi82NDAvdHNnX2hlYWRlci5wbmcGOgZFVA/tsg-header.png);	*/
-	background-image:  url(../images/tsg-header.png);
+background-image: url(http://tsgweb.herokuapp.com/system/images/BAhbBlsHOgZmSSIrMjAxMS8wNy8xNC8xNS8wMi8wMi82NDAvdHNnX2hlYWRlci5wbmcGOgZFVA/tsg-header.png);
 }
 header h1#logo a {
 	position: absolute;
