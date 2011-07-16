@@ -5,7 +5,7 @@
 
 /* Body */
 body {
-  font: 11px/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font: 14px/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
   color: #666666; 
   margin: 0; 
   padding: 0 0 50px 0; 
@@ -41,15 +41,16 @@ header #logo {
 header h1#logo { 
 	margin: 10 0 0 0; 
 	padding: 0;
-	height: 200px;
-	background-image: url(http://tsgweb.herokuapp.com/system/images/BAhbBlsHOgZmSSIrMjAxMS8wNy8xNC8xNS8wMi8wMi82NDAvdHNnX2hlYWRlci5wbmcGOgZFVA/tsg-header.png);	
+	height: 200px; ../images/
+/*	background-image: url(http://tsgweb.herokuapp.com/system/images/BAhbBlsHOgZmSSIrMjAxMS8wNy8xNC8xNS8wMi8wMi82NDAvdHNnX2hlYWRlci5wbmcGOgZFVA/tsg-header.png);	*/
+	background-image: url(../images/tsg-header.png);
 }
 header h1#logo a {
 	position: absolute;
-	top: 60px;
-	left: 113px;
+	top: 53px;
+	left: 104px;
 	font: normal 60px Georgia, 'Times New Roman', Times, serif;
-	letter-spacing: -3px;
+	letter-spacing: -2.7px;
 	color: #376828;
 	text-decoration: none;
 }
@@ -115,7 +116,7 @@ a:hover.more {
 	padding: 0  0 5px 10px;
 }
 #body_content h1 {
-	font: normal 3.7em Georgia, 'Times New Roman', Times, Serif;
+	font: normal 2.7em Georgia, 'Times New Roman', Times, Serif;
 	color: #444;
 	letter-spacing: -2.2px;
 	margin-top: 0.3em;	
@@ -167,7 +168,7 @@ footer p {
 #body_content .news_item_truncated h3 {
 	font: normal 1.7em Georgia, 'Times New Roman', Times, Serif;
 	color: #444;
-	letter-spacing: -2.2px;
+	letter-spacing: -0.8px;
 	margin-top: 0.3em;	
 	margin-left: 5px;	
 	margin-right: 15px;
@@ -202,7 +203,7 @@ form p {
 label {
 	font-weight: bold;
 	color: #7BA857;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 input, select, textarea {
 	margin: 0;
