@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110716055366) do
+ActiveRecord::Schema.define(:version => 20110716133345) do
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -23,6 +23,50 @@ ActiveRecord::Schema.define(:version => 20110716055366) do
     t.string   "image_uid"
     t.string   "image_ext"
   end
+
+  create_table "inquiries", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "spam",       :default => false
+  end
+
+  add_index "inquiries", ["id"], :name => "index_inquiries_on_id"
+
+  create_table "inquiry_settings", :force => true do |t|
+    t.string   "name"
+    t.text     "value"
+    t.boolean  "destroyable"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "news_item_translations", :force => true do |t|
+    t.integer  "news_item_id"
+    t.string   "locale"
+    t.string   "title"
+    t.text     "body"
+    t.string   "external_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "news_item_translations", ["news_item_id"], :name => "index_news_item_translations_on_news_item_id"
+
+  create_table "news_items", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "publish_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "image_id"
+    t.datetime "expiration_date"
+  end
+
+  add_index "news_items", ["id"], :name => "index_news_items_on_id"
 
   create_table "page_part_translations", :force => true do |t|
     t.integer  "page_part_id"
