@@ -5,7 +5,14 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', :group => :development
+gem 'fog'
+group :production do
+  gem "pg"
+end
+ 
+group :development, :test do
+  gem "sqlite3-ruby", :require => "sqlite3"
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'

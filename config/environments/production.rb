@@ -1,4 +1,8 @@
 Tsgweb::Application.configure do
+  ENV['S3_KEY']='AKIAIG3HL4EROXAR3DOQ'
+  ENV['S3_SECRET']='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'
+  ENV['S3_BUCKET']='tsgweb_production'
+  
   # Settings specified here will take precedence over those in config/application.rb
 
   # The production environment is meant for finished, "live" apps.
