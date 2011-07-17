@@ -15,12 +15,12 @@ Tsgweb::Application.configure do
   # 
   ActionMailer::Base.smtp_settings = { 
       :enable_starttls_auto => true, 
-      :address        => 'smtp.sendgrid.net', 
+      :address        => 'smtp.tsgtrippstadt.info', 
       :port           => '25', 
       :authentication => :plain, 
       :user_name      => 'info@tsgtrippstadt.info', 
       :password       => 'gvVRZXLBLACyD5BJ', 
-      :domain         => 'smtp.tsgtrippstadt.info/' 
+      :domain         => 'kassmail.tsgtrippstadt.info' 
     }
   
   # Settings specified here will take precedence over those in config/application.rb
