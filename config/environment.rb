@@ -1,9 +1,6 @@
 # Load the rails application
 require File.expand_path('../application', __FILE__)
 
-# Initialize the rails application
-Tsgweb::Application.initialize!
-
 config.action_mailer.raise_delivery_errors = true
 config.action_mailer.smtp_settings = {
   :address        => "smtp.sendgrid.net",
@@ -13,3 +10,7 @@ config.action_mailer.smtp_settings = {
   :password       => ENV['gvVRZXLBLACyD5BJ'],
   :domain         => ENV['tsgtrippstadt.info']
 }
+
+# Initialize the rails application
+Tsgweb::Application.initialize!
+
