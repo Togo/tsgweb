@@ -13,6 +13,7 @@ Tsgweb::Application.configure do
   #   :domain         => ENV['tsgtrippstadt.info']
   # }
   # 
+  ActionMailer::Base.smtp_settings[:enable_starttls_auto] = false
   ActionMailer::Base.smtp_settings = { 
       :enable_starttls_auto => true, 
       :address        => 'smtp.tsgtrippstadt.info', 
