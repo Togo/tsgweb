@@ -18,9 +18,9 @@ Tsgweb::Application.configure do
       :address        => 'smtp.sendgrid.net', 
       :port           => '25', 
       :authentication => :plain, 
-      :user_name      => 'tsgtrippstadt.info', 
-      :password       => '!IwidG14:tsg', 
-      :domain         => 'tsgtrippstadt.info' 
+      :user_name      => 'info@tsgtrippstadt.info', 
+      :password       => 'gvVRZXLBLACyD5BJ', 
+      :domain         => 'http://kasmail.kasserver.com/' 
     }
   
   # Settings specified here will take precedence over those in config/application.rb
