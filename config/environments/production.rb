@@ -5,7 +5,7 @@ Tsgweb::Application.configure do
   
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
-    :address        => "smtp.tsgtrippstadt.info",
+    :address        => "smtp.sendgrid.net",
     :port           => "25",
     :authentication => :plain,
     :user_name      => ENV['m02081c5'],
