@@ -2,28 +2,7 @@ Tsgweb::Application.configure do
   ENV['S3_KEY']='AKIAIG3HL4EROXAR3DOQ'
   ENV['S3_SECRET']='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'
   ENV['S3_BUCKET']='tsgweb_production'
-  
-  # config.action_mailer.raise_delivery_errors = true
-  # config.action_mailer.smtp_settings = {
-  #   :address        => "smtp.sendgrid.net",
-  #   :port           => "25",
-  #   :authentication => :plain,
-  #   :user_name      => ENV['m02081c5'],
-  #   :password       => ENV['gvVRZXLBLACyD5BJ'],
-  #   :domain         => ENV['tsgtrippstadt.info']
-  # }
-  # 
-  ActionMailer::Base.smtp_settings[:enable_starttls_auto] = false
-  ActionMailer::Base.smtp_settings = { 
-      :enable_starttls_auto => true, 
-      :address        => 'smtp.tsgtrippstadt.info', 
-      :port           => '25', 
-      :authentication => :plain, 
-      :user_name      => 'info@tsgtrippstadt.info', 
-      :password       => 'gvVRZXLBLACyD5BJ', 
-      :domain         => 'kassmail.tsgtrippstadt.info' 
-    }
-  
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # The production environment is meant for finished, "live" apps.
