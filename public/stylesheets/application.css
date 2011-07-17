@@ -19,12 +19,6 @@ body {
 	
 }
 
-#body_content #body_content_left {
-}
-
-#body_content #body_content_right {
-}
-
 /* HEADER */
 
 header {
@@ -244,6 +238,7 @@ input:focus, select:focus, textarea:focus {
 /* team style */
 
 #body_content_left_team {
+  background: #fff;
   float: left;
   width: 799px;
   border-right: 1px solid #ebebeb;
@@ -251,7 +246,8 @@ input:focus, select:focus, textarea:focus {
 #body_content_right_team {
   float: right;
   width: 190px;	
-  padding: 5px;
+  padding: 10px 5px 150px;
+  background: #fff;
 }
 
 #body_content_left_team .data {
