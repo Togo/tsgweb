@@ -13,10 +13,11 @@
     <%= f.label :league -%>
     <%= f.text_field :league  -%>
   </div>
-  
+
   <div class='field'>
-    <%= f.label :coach_id -%>
-    <%= f.text_field :coach_id  -%>
+	<%= f.label :coach_id %> 
+	<%= collection_select(:team, :coach_id, 
+	Coach.all, :id, :name) %>
   </div>
   
   <div class='field'>
