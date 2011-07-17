@@ -18,8 +18,8 @@ Tsgweb::Application.configure do
       :address        => 'smtp.sendgrid.net', 
       :port           => '25', 
       :authentication => :plain, 
-      :user_name      => 'm02081c5', 
-      :password       => 'gvVRZXLBLACyD5BJ', 
+      :user_name      => 'tsgtrippstadt.info', 
+      :password       => '!IwidG14:tsg', 
       :domain         => 'tsgtrippstadt.info' 
     }
   
