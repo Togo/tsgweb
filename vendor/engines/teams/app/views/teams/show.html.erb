@@ -14,7 +14,7 @@
     <li><b>Name: </b><p><%=raw @team.name %></p><br /></li>
     <li><b>Liga: </b<p><%=raw @team.league %></p><br /></li>
 	  <li><b>Trainer: </b><p><%= link_to @coach.name, coach_path(@coach_id) %></p><br /></li>
-    <li><b>Spielleiter: </b><p><%=raw @team.admin_id %></p><br /></li>
+    <li><b>Spielleiter: </b><p><%= link_to @employee.name, employee_path(@admin_id) %></p><br /></li>
     <li><b>Training: </b><p><%=raw @team.training %></p><br /></li>
 	  <li><b>Email: </b><p><%= mail_to @team.email, @team.email %></p><br /></li>
     <li><b>Fussball.de: </b><p><%= link_to "Fussball.de", @team.fussballde %></p><br /></li>

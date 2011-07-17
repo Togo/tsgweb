@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    employees:
+      title: Employees
+  admin:
+    employees:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Employee
+        reorder: Réordonner les Employees
+        reorder_done: Fin de réordonnancement des Employees
+      records:
+        title: Employees
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Employee. Cliquer sur "Créer un(e) nouve(au/l/lle) Employee" pour créer votre premi(er/ère) employee.'
+      employee:
+        view_live_html: Voir ce(t/tte) employee <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) employee
+        delete: Supprimer définitivement ce(t/tte) employee
+  employees:
+    show:
+      other: Autres Employees

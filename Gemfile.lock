@@ -1,6 +1,7 @@
 PATH
   remote: vendor/engines
   specs:
+    refinerycms-employees (1.0)
     refinerycms-teams (1.0)
 
 GEM
@@ -180,6 +181,7 @@ DEPENDENCIES
   fog
   pg
   refinerycms (~> 1.0.3)
+  refinerycms-employees (= 1.0)!
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0)
   refinerycms-news (~> 1.2)

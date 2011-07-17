@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    employees:
+      title: Employees
+  admin:
+    employees:
+      actions:
+        create_new: Add New Employee
+        reorder: Reorder Employees
+        reorder_done: Done Reordering Employees
+      records:
+        title: Employees
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Employees yet. Click "Add New Employee" to add your first employee.
+      employee:
+        view_live_html: View this employee live <br/><em>(opens in a new window)</em>
+        edit: Edit this employee
+        delete: Remove this employee forever
+  employees:
+    show:
+      other: Other Employees

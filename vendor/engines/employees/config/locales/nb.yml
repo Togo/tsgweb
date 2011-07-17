@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    employees:
+      title: Employees
+  admin:
+    employees:
+      actions:
+        create_new: Lag en ny Employee
+        reorder: Endre rekkefølgen på Employees
+        reorder_done: Ferdig å endre rekkefølgen Employees
+      records:
+        title: Employees
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Employees enda. Klikk på "Lag en ny Employee" for å legge til din første employee.
+      employee:
+        view_live_html: Vis hvordan denne employee ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne employee
+        delete: Fjern denne employee permanent
+  employees:
+    show:
+      other: Andre Employees

@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    employees:
+      title: Employees
+  admin:
+    employees:
+      actions:
+        create_new: CREATE NEW Employee
+        reorder: REORDR Employees
+        reorder_done: DUN REORDERIN Employees
+      records:
+        title: Employees
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Employees YET. CLICK "CREATE NEW Employee" 2 ADD UR FURST employee.
+      employee:
+        view_live_html: VIEW DIS employee LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS employee
+        delete: REMOOV DIS employee FOREVR
+  employees:
+    show:
+      other: OTHR Employees

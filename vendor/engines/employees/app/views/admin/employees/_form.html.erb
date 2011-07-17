@@ -1,6 +1,6 @@
-<%= form_for [:admin, @team] do |f| -%>
+<%= form_for [:admin, @employee] do |f| -%>
   <%= render :partial => "/shared/admin/error_messages", :locals => {
-          :object => @team,
+          :object => @employee,
           :include_object_name => true
         } %>
   
@@ -10,25 +10,14 @@
   </div>
   
   <div class='field'>
-    <%= f.label :league -%>
-    <%= f.text_field :league  -%>
-  </div>
-
-  <div class='field'>
-	<%= f.label :coach_id %> 
-	<%= collection_select(:team, :coach_id, 
-	Coach.all, :id, :name) %>
+	<%= f.label :function -%>
+  <%= f.text_field :function  -%>
+		</select>
   </div>
   
   <div class='field'>
-		<%= f.label :admin_id %> 
-		<%= collection_select(:team, :admin_id, 
-		Employee.all, :id, :name) %>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :training -%>
-    <%= f.text_field :training  -%>
+    <%= f.label :phone -%>
+    <%= f.text_field :phone  -%>
   </div>
   
   <div class='field'>
@@ -37,24 +26,24 @@
   </div>
   
   <div class='field'>
-    <%= f.label :fussballde -%>
-    <%= f.text_field :fussballde  -%>
-  </div>
-  
-  <div class='field'>
     <%= f.label :photo -%>
     <%= render :partial => "/shared/admin/image_picker", :locals => {
           :f => f,
           :field => :photo_id,
-          :image => @team.photo,
+          :image => @employee.photo,
           :toggle_image_display => false
         } %>
+  
+  <div class='field'>
+    <%= f.label :since -%>
+    <%= f.date_select :since  -%>
+  </div>
   
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {
                 :f => f,
                 :continue_editing => false,
-                :delete_title => t('delete', :scope => 'admin.teams.team'),
-                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @team.name)
+                :delete_title => t('delete', :scope => 'admin.employees.employee'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @employee.name)
               } %>
 <% end -%>

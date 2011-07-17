@@ -21,7 +21,7 @@
 <div id="body_content_right_team">
   <aside>
     <h2><%= t('.other') %></h2>
-    <ul id="coaches">
+    <ul id="teams">
       <% @coaches.each do |coach| %>
         <li>
           <%= link_to coach.name, coach_path(coach) %>
@@ -31,4 +31,4 @@
   </aside>
 </div>
 
-<%= render :partial => "/shared/content_page" %>
+

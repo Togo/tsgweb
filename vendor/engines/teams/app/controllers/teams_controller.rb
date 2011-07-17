@@ -12,6 +12,7 @@ class TeamsController < ApplicationController
   def show
     @team = Team.find(params[:id])
     @coach = Coach.find(@team.coach_id)
+    @employee = Employee.find(@team.admin_id)
 
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @team in the line below:

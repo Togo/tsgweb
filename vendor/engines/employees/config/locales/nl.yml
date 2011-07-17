@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    employees:
+      title: Employees
+  admin:
+    employees:
+      actions:
+        create_new: Maak een nieuwe Employee
+        reorder: Wijzig de volgorde van de Employees
+        reorder_done: Klaar met het wijzingen van de volgorde van de Employees
+      records:
+        title: Employees
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Employees. Druk op 'Maak een nieuwe Employee' om de eerste aan te maken.
+      employee:
+        view_live_html: Bekijk deze employee op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze employee
+        delete: Verwijder deze employee voor eeuwig
+  employees:
+    show:
+      other: Andere Employees

@@ -243,6 +243,7 @@ input:focus, select:focus, textarea:focus {
   width: 799px;
   border-right: 1px solid #ebebeb;
 }
+
 #body_content_right_team {
   float: right;
   width: 190px;	
@@ -308,5 +309,38 @@ padding-left: 0;
 	padding: 40px 10px;
 }
 
-/* coaches */
+/* employee style */
+
+#body_content_left_employee {
+  background: #fff;
+  float: left;
+  width: 799px;
+  border-right: 1px solid #ebebeb;
+}
+
+#body_content_left_employee .data ul {
+list-style-type: none;
+padding-top: 30px;
+}
+
+#body_content_left_employee .data b {
+  float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+#body_content_left_employee .data p {
+    float: left;
+	margin: 0 0 0 50px;
+}
+
+#body_content_left_employee .photo {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #ebebeb;
+}
 
