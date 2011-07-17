@@ -1,0 +1,58 @@
+<%= form_for [:admin, @team] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @team,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest'  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :league -%>
+    <%= f.text_field :league  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :coach_id -%>
+    <%= f.text_field :coach_id  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :admin_id -%>
+    <%= f.text_field :admin_id  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :training -%>
+    <%= f.text_field :training  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :fussballde -%>
+    <%= f.text_field :fussballde  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :photo_id,
+          :image => @team.photo,
+          :toggle_image_display => false
+        } %>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.teams.team'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @team.name)
+              } %>
+<% end -%>

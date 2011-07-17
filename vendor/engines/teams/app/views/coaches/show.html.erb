@@ -1,0 +1,34 @@
+<div id="body_content_left_team">
+	 <h1> <%= @coach.name %> </h1>
+	
+	<section class="photo">
+    <p>
+      <%= image_fu @coach.photo, geometry="400x200" %>
+    </p>
+  </section>
+
+ <section class="data">
+  <ul>
+    <li><b>Name: </b><p><%=raw @coach.name %></p><br /></li>
+    <li><b>Funktion: </b<p><%=raw @coach.function %></p><br /></li>
+    <li><b>Telefon: </b><p><%=raw @coach.phone %></p><br /></li>
+	  <li><b>Email: </b><p><%= mail_to @coach.email, @coach.email %></p><br /></li>
+	  <li><b>Since:</b><li><p><%=raw @coach.since %></p><br /></li> 
+</ul>
+</section>
+</div>
+
+<div id="body_content_right_team">
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="coaches">
+      <% @coaches.each do |coach| %>
+        <li>
+          <%= link_to coach.name, coach_path(coach) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+</div>
+
+<%= render :partial => "/shared/content_page" %>

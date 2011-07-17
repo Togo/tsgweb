@@ -64,3 +64,5 @@ gem "refinerycms-news",         '~> 1.2'
 gem 'refinerycms-i18n',         '~> 1.0.0'
 
 # END USER DEFINED
+
+gem 'refinerycms-teams', '1.0', :path => 'vendor/engines'

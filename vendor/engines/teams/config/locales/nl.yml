@@ -1,0 +1,43 @@
+---
+nl:
+  plugins:
+    coaches:
+      title: Coaches
+    teams:
+      title: Teams
+  admin:
+    coaches:
+      actions:
+        create_new: Maak een nieuwe Coach
+        reorder: Wijzig de volgorde van de Coaches
+        reorder_done: Klaar met het wijzingen van de volgorde van de Coaches
+      records:
+        title: Coaches
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Coaches. Druk op 'Maak een nieuwe Coach' om
+          de eerste aan te maken.
+      coach:
+        view_live_html: Bekijk deze coach op de website <br/><em>(opent een nieuw
+          venster)</em>
+        edit: Bewerk deze coach
+        delete: Verwijder deze coach voor eeuwig
+    teams:
+      actions:
+        create_new: Maak een nieuwe Team
+        reorder: Wijzig de volgorde van de Teams
+        reorder_done: Klaar met het wijzingen van de volgorde van de Teams
+      records:
+        title: Teams
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Teams. Druk op 'Maak een nieuwe Team' om de
+          eerste aan te maken.
+      team:
+        view_live_html: Bekijk deze team op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze team
+        delete: Verwijder deze team voor eeuwig
+  coaches:
+    show:
+      other: Andere Coaches
+  teams:
+    show:
+      other: Andere Teams

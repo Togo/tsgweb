@@ -1,0 +1,48 @@
+<%= form_for [:admin, @coach] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @coach,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest'  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :function -%>
+    <%= f.text_field :function  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :phone -%>
+    <%= f.text_field :phone  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :photo_id,
+          :image => @coach.photo,
+          :toggle_image_display => false
+        } %>
+  
+  <div class='field'>
+    <%= f.label :since -%>
+    <%= f.date_select :since  -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.coaches.coach'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @coach.name)
+              } %>
+<% end -%>

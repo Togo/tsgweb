@@ -241,3 +241,76 @@ input:focus, select:focus, textarea:focus {
 	width: 100px;
 }
 
+/* team style */
+
+#body_content_left_team {
+  float: left;
+  width: 799px;
+  border-right: 1px solid #ebebeb;
+}
+#body_content_right_team {
+  float: right;
+  width: 190px;	
+  padding: 5px;
+}
+
+#body_content_left_team .data {
+  float: right;
+  width: 355px;
+  padding: 10px 0;
+  border-right: 1px solid #ebebeb;
+}
+
+#body_content_left_team .data ul {
+list-style-type: none;
+padding-left: 0;
+}
+
+#body_content_left_team .data b {
+  float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+#body_content_left_team .data p {
+    float: left;
+	margin: 0 0 0 50px;
+}
+
+#body_content_left_team .photo{
+  float: left;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  border-right: 1px solid #ebebeb;
+}
+
+#body_content_left li {
+	list-style-type: none;
+	
+}
+
+#body_content_left #teams .team_list {
+	width: 800px;
+	height: 110px;
+	background: #f8f8f8;
+	border: 1px solid #ebebeb;
+	margin-bottom: 20px;
+	padding-left:0px;
+}
+
+#body_content_left #teams .photo {
+	float:left;
+	padding: 10px;
+	border-right: 1px solid #ebebeb;
+}
+
+#body_content_left #teams .team {
+	float:left;
+	font-size: 20px;
+	padding: 40px 10px;
+}
+
+/* coaches */
+

@@ -10,7 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110716133345) do
+ActiveRecord::Schema.define(:version => 20110717055620) do
+
+  create_table "coaches", :force => true do |t|
+    t.string   "name"
+    t.string   "function"
+    t.string   "email"
+    t.string   "phone"
+    t.integer  "photo_id"
+    t.date     "since"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "coaches", ["id"], :name => "index_coaches_on_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -187,6 +201,22 @@ ActiveRecord::Schema.define(:version => 20110716133345) do
   add_index "slugs", ["locale"], :name => "index_slugs_on_locale"
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_n_s_s_and_s", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "teams", :force => true do |t|
+    t.string   "name"
+    t.string   "league"
+    t.integer  "coach_id"
+    t.integer  "admin_id"
+    t.string   "training"
+    t.string   "email"
+    t.string   "fussballde"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "teams", ["id"], :name => "index_teams_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"

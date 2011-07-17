@@ -1,0 +1,46 @@
+---
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    coaches:
+      title: Coaches
+    teams:
+      title: Teams
+  admin:
+    coaches:
+      actions:
+        create_new: CREATE NEW Coach
+        reorder: REORDR Coaches
+        reorder_done: DUN REORDERIN Coaches
+      records:
+        title: Coaches
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Coaches YET. CLICK "CREATE NEW Coach" 2 ADD UR FURST
+          coach.
+      coach:
+        view_live_html: VIEW DIS coach LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS coach
+        delete: REMOOV DIS coach FOREVR
+    teams:
+      actions:
+        create_new: CREATE NEW Team
+        reorder: REORDR Teams
+        reorder_done: DUN REORDERIN Teams
+      records:
+        title: Teams
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Teams YET. CLICK "CREATE NEW Team" 2 ADD UR FURST
+          team.
+      team:
+        view_live_html: VIEW DIS team LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS team
+        delete: REMOOV DIS team FOREVR
+  coaches:
+    show:
+      other: OTHR Coaches
+  teams:
+    show:
+      other: OTHR Teams

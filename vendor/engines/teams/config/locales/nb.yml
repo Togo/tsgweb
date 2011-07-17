@@ -1,0 +1,44 @@
+---
+nb:
+  plugins:
+    coaches:
+      title: Coaches
+    teams:
+      title: Teams
+  admin:
+    coaches:
+      actions:
+        create_new: Lag en ny Coach
+        reorder: Endre rekkefølgen på Coaches
+        reorder_done: Ferdig å endre rekkefølgen Coaches
+      records:
+        title: Coaches
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Coaches enda. Klikk på "Lag en ny Coach" for å
+          legge til din første coach.
+      coach:
+        view_live_html: Vis hvordan denne coach ser ut offentlig <br/><em>(åpner i
+          et nytt vindu)</em>
+        edit: Rediger denne coach
+        delete: Fjern denne coach permanent
+    teams:
+      actions:
+        create_new: Lag en ny Team
+        reorder: Endre rekkefølgen på Teams
+        reorder_done: Ferdig å endre rekkefølgen Teams
+      records:
+        title: Teams
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Teams enda. Klikk på "Lag en ny Team" for å legge
+          til din første team.
+      team:
+        view_live_html: Vis hvordan denne team ser ut offentlig <br/><em>(åpner i
+          et nytt vindu)</em>
+        edit: Rediger denne team
+        delete: Fjern denne team permanent
+  coaches:
+    show:
+      other: Andre Coaches
+  teams:
+    show:
+      other: Andre Teams

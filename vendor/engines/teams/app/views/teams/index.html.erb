@@ -1,0 +1,13 @@
+<% content_for :body_content_left do %>
+  <ul id="teams">
+    <% @teams.each do |team| %>
+<ul class="team_list">
+      <li class="photo">
+        <%= image_fu team.photo, geometry="200x200" %></li>
+        <li class="team"><%= link_to team.name+"("+team.league+")", team_path(team) %></li>
+</ul>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
