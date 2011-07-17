@@ -20,7 +20,7 @@ Tsgweb::Application.configure do
       :authentication => :plain, 
       :user_name      => 'info@tsgtrippstadt.info', 
       :password       => 'gvVRZXLBLACyD5BJ', 
-      :domain         => 'http://kasmail.kasserver.com/' 
+      :domain         => 'smtp.tsgtrippstadt.info/' 
     }
   
   # Settings specified here will take precedence over those in config/application.rb
