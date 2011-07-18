@@ -1,24 +1,22 @@
-<div id="body_content_left_team">
+<section id="body_content">
+<div id="body_content_left_engines_show">
 	 <h1> <%= @coach.name %> </h1>
-	
 	<section class="photo">
-    <p>
-      <%= image_fu @coach.photo, geometry="400x200" %>
-    </p>
+      <%= image_fu @coach.photo, :large %>
   </section>
 
  <section class="data">
   <ul>
-    <li><b>Name: </b><p><%=raw @coach.name %></p><br /></li>
-    <li><b>Funktion: </b<p><%=raw @coach.function %></p><br /></li>
-    <li><b>Telefon: </b><p><%=raw @coach.phone %></p><br /></li>
-	  <li><b>Email: </b><p><%= mail_to @coach.email, @coach.email %></p><br /></li>
-	  <li><b>Since:</b><li><p><%=raw @coach.since %></p><br /></li> 
+    <li><b>Name: </b><%=raw @coach.name %><br /></li>
+    <li><b>Funktion: </b><%=raw @coach.function %><br /></li>
+    <li><b>Telefon: </b><%=raw @coach.phone %><br /></li>
+	  <li><b>Email: </b><%= mail_to @coach.email, @coach.email %><br /></li>
+	  <li><b>Since:</b><li><%=raw @coach.since %><br /></li> 
 </ul>
 </section>
 </div>
 
-<div id="body_content_right_team">
+<div id="body_content_right_engines_show">
   <aside>
     <h2><%= t('.other') %></h2>
     <ul id="teams">
@@ -30,5 +28,6 @@
     </ul>
   </aside>
 </div>
+</section>
 
 

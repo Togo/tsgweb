@@ -1,28 +1,23 @@
-<% content_for :body_content_title do %>
-
-<% end %>
-<div id="body_content_left_employee">
-	
-	 <h1>   <%= @employee.name %></h1>
+<section id="body_content">
+<div id="body_content_left_engines_show">
+	<h1><%= @employee.name %></h1>
 	
 	<section class="photo">
-    <p>
-      <%= image_fu @employee.photo, geometry="200x200" %>
-    </p>
+      <%= image_fu @employee.photo, :large %>
   </section>
 
  <section class="data">
   <ul>
-    <li><b>Name: </b><p><%=raw @employee.name %></p><br /></li>
-    <li><b>Funktion: </b<p><%=raw @employee.function %></p><br /></li>
-	  <li><b>Telefon: </b><p><%=raw @employee.phone %></p><br /></li>
-	  <li><b>Email: </b><p><%= mail_to @employee.email, @employee.email  %></p><br /></li>
-    <li><b>Since: </b><p><%=raw @employee.since %></p><br /></li>	  
+    <li><b>Name: </b><%=raw @employee.name %><br /></li>
+    <li><b>Funktion: </b><%=raw @employee.function %><br /></li>
+	  <li><b>Telefon: </b><%=raw @employee.phone %><br /></li>
+	  <li><b>Email: </b><%= mail_to @employee.email, @employee.email  %><br /></li>
+    <li><b>Since: </b><%=raw @employee.since %><br /></li>	  
 </ul>
 </section>
 </div>
 
-<div id="body_content_right_team">
+<div id="body_content_right_engines_show">
   <aside>
     <h2><%= t('.other') %></h2>
     <ul id="teams">
@@ -34,4 +29,5 @@
     </ul>
   </aside>
 </div>
+</section>
 

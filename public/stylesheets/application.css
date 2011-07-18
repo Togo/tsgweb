@@ -253,3 +253,23 @@ input:focus, select:focus, textarea:focus {
 	float: right;
 	font-size: 27px;
 }
+
+/* Engines Show */
+
+#body_content_left_engines_show {
+  float: left;
+  width:649px;
+  border-right: 1px solid #ebebeb;
+}
+#body_content_right_engines_show {
+  float: right;
+  width: 250px;	
+}
+
+#body_content_left_engines_show .photo{
+margin: 20px;
+}
+
+#body_content_left_engines_show ul {
+	list-style-type: none;
+}
