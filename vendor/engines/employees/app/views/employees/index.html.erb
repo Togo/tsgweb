@@ -3,7 +3,7 @@
     <% @employees.each do |employee| %>
       <ul class="team_list">
 			      <li class="photo"><%= image_fu employee.photo, geometry="200x200" %></li>
-        <li class="team"><%= link_to employee.name+"("+employee.function+")", employee_path(employee) %></li>
+        <li class="team"><%= link_to employee.name+" ("+employee.function+")", employee_path(employee) %></li>
 			</ul>
     <% end %>
   </ul>

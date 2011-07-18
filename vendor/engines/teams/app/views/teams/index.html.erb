@@ -4,7 +4,7 @@
 <ul class="team_list">
       <li class="photo">
         <%= image_fu team.photo, geometry="200x200" %></li>
-        <li class="team"><%= link_to team.name+"("+team.league+")", team_path(team) %></li>
+        <li class="team"><%= link_to team.name+" ("+team.league+") ", team_path(team) %></li>
 </ul>
     <% end %>
   </ul>
