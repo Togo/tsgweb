@@ -1,13 +1,10 @@
-<% content_for :body_content_left do %>
-  <ul id="teams">
-    <% @teams.each do |team| %>
-<ul class="team_list">
-      <li class="photo">
-        <%= image_fu team.photo, geometry="200x200" %></li>
-        <li class="team"><%= link_to team.name+" ("+team.league+") ", team_path(team) %></li>
-</ul>
+<section id="body_content" class="engine_index">  
+		<% @teams.each do |team| %>
+			<div id="engine_index_list_container">
+			<%= image_fu team.photo, :medium %>
+   <p><%= link_to team.name+" ("+team.league+") ", team_path(team) %></p>
+</div>
     <% end %>
-  </ul>
-<% end %>
 
-<%= render :partial => "/shared/content_page" %>
+</section>
+
