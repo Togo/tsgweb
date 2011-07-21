@@ -67,3 +67,4 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 
 gem 'refinerycms-teams', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-employees', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-announcements', '1.0', :path => 'vendor/engines'
