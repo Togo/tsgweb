@@ -11,7 +11,7 @@
   
   <div class='field'>
 	<%= f.label :function -%>
-	<%= f.text_field :function -%>
+	<%= options_for_select(RefinerySetting.get(:Employees_Functions))  -%>
 		</select>
   </div> 
   
