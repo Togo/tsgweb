@@ -11,6 +11,7 @@
   <ul>
     <li><b>Liga: </b<%= raw @team.league %><br /></li>
 	  <li><b>Trainer: </b><%= link_to @coach.name, coach_path(@coach_id) %><br /></li>
+	<li><b>Co-Trainer: </b><%= link_to @coach.name, coach_path(@co_coach_id) %><br /></li>
     <li><b>Spielleiter: </b><%= link_to @employee.name, employee_path(@admin_id) %><br /></li>
     <li><b>Training: </b><%=raw @team.training %><br /></li>
 	  <li><b>Email: </b><%= mail_to @team.email, @team.email %><br /></li>

@@ -10,27 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110720150914) do
-
-  create_table "announcements", :force => true do |t|
-    t.string   "league"
-    t.string   "teamname"
-    t.string   "hometeam"
-    t.string   "awayteam"
-    t.integer  "goalshome"
-    t.integer  "goalsaway"
-    t.string   "scorerhome"
-    t.string   "scoreraway"
-    t.datetime "date"
-    t.string   "location"
-    t.string   "squad"
-    t.text     "other"
-    t.integer  "position"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "announcements", ["id"], :name => "index_announcements_on_id"
+ActiveRecord::Schema.define(:version => 20110717142759) do
 
   create_table "coaches", :force => true do |t|
     t.string   "name"
@@ -240,6 +220,7 @@ ActiveRecord::Schema.define(:version => 20110720150914) do
     t.string   "name"
     t.string   "league"
     t.integer  "coach_id"
+    t.integer  "co_coach_id"
     t.integer  "admin_id"
     t.string   "training"
     t.string   "email"

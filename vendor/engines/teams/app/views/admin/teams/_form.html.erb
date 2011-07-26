@@ -19,6 +19,12 @@
 	<%= collection_select(:team, :coach_id, 
 	Coach.all, :id, :name) %>
   </div>
+
+  <div class='field'>
+	<%= f.label :co_coach_id %> 
+	<%= collection_select(:team, :co_coach_id, 
+	Coach.all, :id, :name) %>
+  </div>
   
   <div class='field'>
 		<%= f.label :admin_id %> 
