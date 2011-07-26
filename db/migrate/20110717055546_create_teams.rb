@@ -5,6 +5,7 @@ class CreateTeams < ActiveRecord::Migration
       t.string :name
       t.string :league
       t.integer :coach_id
+      t.integer :co_coach_id
       t.integer :admin_id
       t.string :training
       t.string :email
