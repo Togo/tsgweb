@@ -240,7 +240,6 @@ ActiveRecord::Schema.define(:version => 20110720150914) do
     t.string   "name"
     t.string   "league"
     t.integer  "coach_id"
-    t.integer  "co_coach_id"
     t.integer  "admin_id"
     t.string   "training"
     t.string   "email"

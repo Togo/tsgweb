@@ -1,0 +1,6 @@
+<h3>Geschäftstelle:</h3>
+<p>Petra Reuter<br />Ringstr. 18<br />67705 Trippstadt<br />(06306) 456660<br /><a href="mailto:info@tsgtrippstadt.info" title="info@tsgtrippstadt.info">info@tsgtrippstadt.info</a>
+</p>
+<h3>Sportanlage:</h3>
+<p>Karlstalstr. 7<br />67705 Trippstadt<br />(06306) 6059<br /><a href="http://maps.google.de/maps/place?q=TSG+04+Trippstadt&amp;hl=de&amp;cid=1166328727507979001" title="http://maps.google.de/maps/place?q=TSG+04+Trippstadt&amp;hl=de&amp;cid=1166328727507979001">Google Maps</a>
+</p>

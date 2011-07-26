@@ -1,0 +1,23 @@
+<h3>Hallo Sportfreunde,</h3>
+<p>wie Ihr sehen könnt habe ich für die TSG eine neue Seite erstellt. Ich bin dabei auf eine neue Programmiersprache umgestiegen, diese erlaubt es mir in Zukunft leicht Erweiterung für die Seite zu erstellen.<br />Was gibt es neues...</p>
+<h3>Style/Adminbereich(für Trainer, Betreuer, Vorstand):</h3>
+<p>Neben einem neuem Style(der in den nächsten Wochen noch optimiert wird) gibt es auch eine Möglichkeit für alle die ein Zugang zum Adminbereich haben, Seiten zu bearbeiten. Mannschaften, Trainer, Mitarbeiter zu erstellen.</p>
+<p>! Passwort und Benutzername bitte bei mir beantragen. &#160;<a href="mailto:togo210@googlemail.com" title="togo210@googlemail.com">togo210@googlemail.com</a>
+</p>
+<h3>Twitter(für alle):</h3>
+<p>Die TSG zwitschert ab sofort. Unter "tsgtrippstadt" könnt ihr die TSG auf Twitter erreichen. Ich denke Twitter ist ein super Möglichkeit aktuelles auf der Seite zu präsentieren. Da denke ich vor allem an Ergebnisse, Spielankündigungen, Trainingsänderungen uvm. ... alles was die TSG Mitglieder und Anhänger wissen sollten. Den Benutzername und das Passwort erhaltet Ihr wiederum bei mir.&#160;</p>
+<h3>News(für Trainer, Betreuer, Vorstand):</h3>
+<p>Für eher langfristige Neuigkeiten ist die News Seite gedacht. Hier denke ich an z.b Ankündigungen, längere Newsbeiträge, Weihnachtsansprache usw. . News könnt ihr nur verfassen wenn ihr ein Adminzugang besitzt</p>
+<h3>Forum(für alle):</h3>
+<p>Das Forum rückt ein wenig in den Hintergrund. Wie schon von der vorherigen Seite bekannt kann im Forum über Spiele, Training, Aufstellung und alles mögliche diskutiert werden.&#160;</p>
+<h3>Macht die Seite lebendig(für alle):</h3>
+<p>Ich kann euch nur die Plattform bieten um die TSG im Netz zu präsentieren. Leider war die Website, außer bei wenigen, nicht Bestandteil der Vereinsarbeit. Ich wünsche mir das sich dies ändert. Wenn wir die Seite Aktuell und Interessant halten, können wir Benutzer und vielleicht auch Vereinsmitglieder gewinnen.&#160;<br />Die Seite ist noch nicht fertig in der Anfangszeit werden bestimmt auch Fehler auftreten. Ich bitte euch DRINGENDS mir diese mitzuteilen. Sollten Verbesserungswünsche bestehen bitte sagt mir Bescheid ich sehe was sich machen lässt.</p>
+<h3>Der Schluss(für alle):</h3>
+<p>Viel Spaß mit der neuen Seite, ich hoffe es spricht sich bei allen rum das es eine Neue Seite gibt und das JEDER diese mitgestalten kann!</p>
+<h3>In Planung:</h3>
+<ul><li>Verbesserung des Layouts und Style</li>
+<li>Integration Forum in Mannschaftsseiten</li>
+<li>Verbesserungen im Admin Bereich</li>
+<li>Admin Bereich in Deutsch</li>
+<li>Spielankündigungen</li>
+</ul>
