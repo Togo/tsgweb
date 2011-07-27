@@ -1,0 +1,25 @@
+de:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    announcements:
+      title: Spiele
+  admin:
+    announcements:
+      actions:
+        create_new: Neues Spiel
+        reorder: Spiele Sortieren
+        reorder_done: Fertig!
+      records:
+        title: Spiele
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Announcements yet. Click "Add New Announcement" to add your first announcement.
+      announcement:
+        view_live_html: View this announcement live <br/><em>(opens in a new window)</em>
+        edit: Bearbeiten
+        delete: Löschen dieses Spieles
+  announcements:
+    show:
+      other: Andere Spiele

@@ -1,0 +1,25 @@
+de:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    employees:
+      title: Vorstand/Spielleiter
+  admin:
+    employees:
+      actions:
+        create_new: Neues Vorstandsmitglied erstellen
+        reorder: Sortieren
+        reorder_done: Fertig!
+      records:
+        title: Vorstand/Spielleiter
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Employees yet. Click "Add New Employee" to add your first employee.
+      employee:
+        view_live_html: View this employee live <br/><em>(opens in a new window)</em>
+        edit: Bearbeiten
+        delete: Löschen
+  employees:
+    show:
+      other: Weitere

@@ -3,15 +3,13 @@
 <% end %>
 
 <% content_for :body_content_left do %>
-<section>
-<h2>	<%= @announcement.date.to_s(:short) + " " +  @announcement.league %></h2>
-</section>
+
 <section>
 <table  style="text-align:center">
 	<tr>
-		<td style="width:250px"  ><h2>Hometeam</h2></td>
+		<td style="width:250px"  ><h2>Heimmannschaft</h2></td>
 		<td style="width:50px" ><h2>-</h2></td>
-		<td style="width:250px" ><h2>Awayteam</h2></td>
+		<td style="width:250px" ><h2>Auswärtsmannschaft</h2></td>
 	</tr>
 	<tr>
 		<td><%=raw @announcement.hometeam %></td>
@@ -25,18 +23,28 @@
 	</tr>
 	<tr>
 		<td><%=raw @announcement.scorerhome %></td>
-		<td> </td>
+		<td> | </td>
 		<td><%=raw @announcement.scoreraway %> </td>
 	</tr>
 </table>
 </section>
 
 <section>
-	<h3>Kader:</h3>
+<h2>Wettbewerb:</h2>
+<p><%= @announcement.league %></p>	
+</section>
+
+<section>
+<h2>Uhrzeit:</h2>
+<p><%= @announcement.date.to_s(:short) %></p>
+</section>
+
+<section>
+	<h2>Kader:</h2>
 	<p> <%=raw @announcement.squad %></p>
 </section>
 <section>
-	<h3>Spielbericht: </h3>
+	<h2>Spielbericht/Sonstiges: </h2>
 	<p><%=raw @announcement.other %></p>
 </section>
 

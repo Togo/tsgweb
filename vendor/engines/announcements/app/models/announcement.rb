@@ -4,4 +4,8 @@ class Announcement < ActiveRecord::Base
 
   validates :league, :presence => true
   
+  scope :latest, lambda { |*l_params|
+     limit( l_params.first || 10)
+   }
+  
 end

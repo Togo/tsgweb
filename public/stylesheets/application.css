@@ -5,7 +5,7 @@
 
 /* Body */
 body {
-  font: 14px/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font: 14px/163% 'Lucida Grande', Verdana, Helvetica, sans-serif;
   color: #666666; 
   margin: 0; 
   padding: 0 0 50px 0; 
@@ -107,10 +107,10 @@ a:hover.more {
 #body_content p {
 	padding: 0  0 5px 10px;
 }
-#body_content h1 {
-	font: normal 2.7em Georgia, 'Times New Roman', Times, Serif;
+h1 {
+	font: normal 2.0em Georgia, 'Times New Roman', Times, Serif;
 	color: #444;
-	letter-spacing: -2.2px;
+	letter-spacing: -1.0px;
 	margin-top: 0.3em;	
 	margin-left: 5px;	
 	margin-right: 15px;
@@ -124,14 +124,29 @@ a:hover.more {
 	border: none;
 }
 
+h2 {
+display: block;
+font-size: 1.1em;
+-webkit-margin-before: 0.83em;
+-webkit-margin-after: 0.83em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+
+h2 a{
+font-size: 0.7em;
+letter-spacing: -1.0px;
+}
+
 #body_content_left {
   float: left;
-  width: 599px;
+  width: 699px;
   border-right: 1px solid #ebebeb;
 }
 #body_content_right {
   float: right;
-  width: 400px;	
+  width: 300px;	
 }
 #body_content_left .inner {
   
@@ -258,12 +273,12 @@ input:focus, select:focus, textarea:focus {
 
 #body_content_left_engines_show {
   float: left;
-  width:649px;
+   width: 799px;
   border-right: 1px solid #ebebeb;
 }
 #body_content_right_engines_show {
   float: right;
-  width: 250px;	
+  width: 200px;	
 }
 
 #body_content_left_engines_show .photo{

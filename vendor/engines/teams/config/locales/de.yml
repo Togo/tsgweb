@@ -1,0 +1,46 @@
+---
+de:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    coaches:
+      title: Trainer
+    teams:
+      title: Mannschaften
+  admin:
+    coaches:
+      actions:
+        create_new: Neuen Trainer erstellen
+        reorder: Trainer Sortieren
+        reorder_done: Fertig!
+      records:
+        title: Trainer
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Coaches yet. Click "Add New Coach" to add your
+          first coach.
+      coach:
+        view_live_html: View this coach live <br/><em>(opens in a new window)</em>
+        edit: Edit this coach
+        delete: Remove this coach forever
+    teams:
+      actions:
+        create_new: Neue Mannschaft erstellen
+        reorder: Mannschaften Sortieren
+        reorder_done: Fertig!
+      records:
+        title: Mannschaften
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Teams yet. Click "Add New Team" to add your first
+          team.
+      team:
+        view_live_html: View this team live <br/><em>(opens in a new window)</em>
+        edit: Mannschaft bearbeiten
+        delete: Mannschaft Löschen
+  coaches:
+    show:
+      other: Weitere Trainer
+  teams:
+    show:
+      other: Weitere Mannschaften
