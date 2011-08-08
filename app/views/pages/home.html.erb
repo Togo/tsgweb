@@ -2,11 +2,11 @@
 	<div id="body_content_left">
 		
 				<div id="latest_news">
-		<h1>Spielankündigungen</h1>  	
+		<h1>Nächste Spiele</h1>  	
 		<ul> 
 					<% @announcement_items.each do |item| %> 
 					<article class="news_item_truncated">
-					        <p><%= link_to item.date.to_s(:short) + "  " + item.hometeam + " : " + item.awayteam + " (" + item.teamname + ")" , announcement_path(item) %></p>
+					        <p><%= link_to item.date.to_s(:short) + "  " + item.hometeam + " - " + item.awayteam + " " + item.goalshome.to_s + ":" + item.goalsaway.to_s + " (" + item.teamname + ")" , announcement_path(item) %></p>
 					</article> 
 					<% end %>
 				</ul>
