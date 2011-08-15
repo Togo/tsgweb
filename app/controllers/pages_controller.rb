@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
     @news_items = NewsItem.latest(3)
-    @announcement_items = Announcement.order('date DESC').last(5)
+    @announcement_items = Announcement.order('date DESC').first(5)
   end
 
   # This action can be accessed normally, or as nested pages.

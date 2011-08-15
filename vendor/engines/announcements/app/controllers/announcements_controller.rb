@@ -20,7 +20,7 @@ class AnnouncementsController < ApplicationController
 protected
 
   def find_all_announcements
-    @announcements = Announcement.order('date')
+    @announcements = Announcement.order('date DESC')
   end
 
   def find_page
