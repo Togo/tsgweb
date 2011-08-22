@@ -3,9 +3,10 @@ class PagesController < ApplicationController
   # This action is usually accessed with the root path, normally '/'
   def home
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
-    @news_items = NewsItem.latest(3)
-    @announcement_items = Announcement.order('date DESC').first(5)
+    @news_items = NewsItem.latest(1)
+    @announcement_items = Announcement.order('date DESC').first(10)
   end
+
 
   # This action can be accessed normally, or as nested pages.
   # Assuming a page named "mission" that is a child of "about",

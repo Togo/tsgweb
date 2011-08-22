@@ -2,7 +2,7 @@
 	<div id="body_content_left">
 		
 				<div id="latest_news">
-		<h1>Nächste Spiele</h1>  	
+		<h1>Nächste Spiele</h1>
 		<ul> 
 					<% @announcement_items.each do |item| %> 
 					<article class="news_item_truncated">
@@ -10,6 +10,9 @@
 					</article> 
 					<% end %>
 				</ul>
+				<p>
+					<%= link_to "Alle Spiele", href="/announcements" %>
+				</p>
 				</div>
 				
 		<div id="latest_news">
@@ -17,10 +20,14 @@
 <ul> 
 			<% @news_items.each do |item| %> 
 			<article class="news_item_truncated">
-			        <p><%= link_to item.title, news_item_url(item) %></p>
-			      </article> 
+			        <h3><%= link_to item.title, news_item_url(item) %></h3>
+			<%= item.body.html_safe %>
+			      </article>
 			<% end %>
 		</ul>
+		<p>
+			 <%= link_to "Alle News", news_items_url %>
+		</p>
 		</div>
 </div>
 
