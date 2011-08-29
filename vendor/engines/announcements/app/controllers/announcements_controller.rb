@@ -7,6 +7,7 @@ class AnnouncementsController < ApplicationController
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @announcement in the line below:
     @announcement_list = Announcement
+    @teams = Team.order('position')
     present(@page)
   end
 

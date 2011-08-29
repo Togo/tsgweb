@@ -1,84 +1,16 @@
 <% content_for :body_content_left do %>
   <ul id="announcements">
-	<h1>1. Mannschaft</h1>
+	<% @teams.each do |team| %>
+	<h1><%= team.name %></h1>
     <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "1. Mannschaft" %>
+      
+		<% if announcement.teamname ==   team.name %>
       	<li>
         <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
 		</li>
     	<% end %>
     <% end %>
-
-	<h1>A-Jugend</h1>
-    <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "A-Jugend SG TuS Hohenecken" %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-    <% end %>
-
-	<h1>B-Jugend</h1>
-    <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "B - Jugend" %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-    <% end %>
-
-	<h1>C-Jugend</h1>
-    <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "C-Jugend SG Krickenbach/Schopp" %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-    <% end %>
-
-	<h1>D1-Jugend</h1>
-    <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "D1 - Jugend" %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-    <% end %>
-
-	<h1>D2-Jugend</h1>
-    <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "D2 - Jugend" %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-    <% end %>
-
-	<h1>E-Jugend</h1>
-    <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "E - Jugend" %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-    <% end %>
-
-	<h1>F-Jugend</h1>
-    <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "F - Jugend" %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-    <% end %>
-
-	<h1>Alle Spiele nach Datum</h1>
-    <% @announcements.each do |announcement| %>
-      	<li>
-        <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
-		</li>
-    	<% end %>
-  </ul>
+  <% end %>
 <% end %>
 
 
