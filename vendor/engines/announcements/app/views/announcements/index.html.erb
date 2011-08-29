@@ -11,7 +11,7 @@
 
 	<h1>A-Jugend</h1>
     <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "A-Jugend (SG TuS Hohenecken)" %>
+		<% if announcement.teamname ==   "A-Jugend SG TuS Hohenecken" %>
       	<li>
         <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
 		</li>
@@ -29,7 +29,7 @@
 
 	<h1>C-Jugend</h1>
     <% @announcements.each do |announcement| %>
-		<% if announcement.teamname ==   "C-Jugend (SG Krickenbach & Schopp)" %>
+		<% if announcement.teamname ==   "C-Jugend SG Krickenbach/Schopp" %>
       	<li>
         <%= link_to announcement.date.to_s(:short) + " " + announcement.teamname + ":  " + announcement.hometeam +  " - " + announcement.awayteam + " (" + announcement.goalshome.to_s + ":" + announcement.goalsaway.to_s  + ")", announcement_path(announcement) %>
 		</li>
