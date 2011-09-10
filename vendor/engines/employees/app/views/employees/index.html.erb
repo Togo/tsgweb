@@ -3,7 +3,16 @@
 			<div id="engine_index_list_container">
 				
 			<div id="img"><%= image_fu employee.photo, :medium %></div>
-            <div id="liste"><%= link_to employee.name, employee_path(employee) %></div>
+            <div id="liste">
+				<ul>
+					<li class="heading"><%= link_to employee.name, employee_path(employee) %></h1></li>
+					<li>Funktion: <%= employee.function %></li>
+					<li>Telefon: <%= employee.phone %></li>
+					<li>E-Mail: <%= employee.email %></li>
+				</ul>
+				
+			</div>
+			<div style="clear:both"></div>
 			</div>
     <% end %>
 </section>

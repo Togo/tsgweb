@@ -252,37 +252,9 @@ input:focus, select:focus, textarea:focus {
 /* Engines Index List Style */
 
 
-#body_content #engine_index_list_container_employee {
-	background: #F6F5F5;
-	margin: 25px;
-	height: 100%;
-}
-
-#body_content #engine_index_list_container_employee img {
-	border-right: 1px solid #E8E8E8;
-	margin: 20px;
-}
-
-#body_content #engine_index_list_container_employee .employee_image {
-
-}
-
-#body_content #engine_index_list_container_employee .employee_text {
-	float: left;
-}
-#body_content #engine_index_list_container_employee ul {
-	list-style-type: none;
-}
-
-#body_content #engine_index_list_container_employee li {
-	font-size: 20px;
-
-}
-
 #body_content #engine_index_list_container {
 	background: #F6F5F5;
 	margin: 20px 20px;
-	padding-top: 5px;
 	min-height: 150px;
 }
 
@@ -290,12 +262,22 @@ input:focus, select:focus, textarea:focus {
 #body_content #engine_index_list_container img {
 	padding: 10px 15px;
 	border-right: 1px solid #E8E8E8;
+	float: left;
 }
 
-#body_content #engine_index_list_container p {
-	padding: 30px 150px 30px 0;
-	float: right;
-	font-size: 20px;
+#body_content #engine_index_list_container ul {
+	padding-left: 280px;
+	padding-top: 10px;
+	list-style-type: none;
+}
+
+
+#body_content #engine_index_list_container li {
+		font-size: 14px;
+		padding: 5px;
+}
+#body_content #engine_index_list_container li.heading {
+		font-size: 23px;
 }
 
 /* Engines Show */
