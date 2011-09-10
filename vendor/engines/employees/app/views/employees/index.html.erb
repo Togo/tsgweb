@@ -1,10 +1,10 @@
 <section id="body_content" class="engine_index">  
 		<% @employees.each do |employee| %>
 			<div id="engine_index_list_container">
-			<%= image_fu employee.photo, :medium %>
-            	<%= link_to employee.name, employee_path(employee) %>
+				
+			<div id="img"><%= image_fu employee.photo, :medium %></div>
+            <div id="liste"><%= link_to employee.name, employee_path(employee) %></div>
 			</div>
     <% end %>
-
 </section>
 
