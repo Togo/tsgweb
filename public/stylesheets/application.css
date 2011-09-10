@@ -275,6 +275,7 @@ input:focus, select:focus, textarea:focus {
 #body_content #engine_index_list_container li {
 		font-size: 14px;
 		padding: 5px;
+		
 }
 #body_content #engine_index_list_container li.heading {
 		font-size: 23px;
@@ -298,4 +299,24 @@ margin: 20px;
 
 #body_content_left_engines_show ul {
 	list-style-type: none;
+}
+
+#body_content #announcement_show h2 {
+	padding: 10px;
+}
+#body_content #announcement_show ul {
+	list-style-type: none;
+}
+#body_content #announcement_show li {
+	padding: 0 5px;
+}
+
+#body_content #announcement_show table {
+	border: 0;
+	padding-left: 270px;
+	font-size: 17px;
+}
+
+#body_content #announcement_show th,td {
+	padding: 10px;
 }

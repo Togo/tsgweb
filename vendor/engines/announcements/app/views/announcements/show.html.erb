@@ -1,66 +1,39 @@
 <% content_for :body_content_title do %>
-  <%= @announcement.teamname + ":  " +  @announcement.hometeam + " - " + @announcement.awayteam +  " (" + @announcement.location + ")" %>
+  <%= @announcement.teamname %>
 <% end %>
 
 <% content_for :body_content_left do %>
 
-<section>
-<table  style="text-align:center">
-	<tr>
-		<td style="width:250px"  ><h2>Heimmannschaft</h2></td>
-		<td style="width:50px" ><h2>-</h2></td>
-		<td style="width:250px" ><h2>Auswärtsmannschaft</h2></td>
-	</tr>
-	<tr>
-		<td><%=raw @announcement.hometeam %></td>
-		<td>-</td>
-		<td><%=raw @announcement.awayteam %></td>
-	</tr>
-	<tr>
-		<td><%=raw @announcement.goalshome %></td>
-		<td>:</td>
-		<td><%=raw @announcement.goalsaway %></td>
-	</tr>
-	<tr>
-		<td><%=raw @announcement.scorerhome %></td>
-		<td> | </td>
-		<td><%=raw @announcement.scoreraway %> </td>
-	</tr>
-</table>
+<section id="announcement_show">
+	<h2><%= @announcement.league %>  - <%= @announcement.date.to_s(:short) %> - <%= @announcement.location%></h2>
+	<div id="table">
+		<table >
+		<tr><th>Heimmannschaft</th><th> - </th><th>Auswärtsmannschaft</th></tr>
+		<tr><td><%=raw @announcement.hometeam %></td><td> - </td><td><%= raw @announcement.awayteam %></td></tr>
+		<tr><td><%=raw @announcement.goalshome %></td><td> : </td><td><%=raw @announcement.goalsaway %></td></tr>
+		<tr><td><%=raw @announcement.scorerhome %> </td><td> | </td><td><%=raw @announcement.scoreraway %></td></tr>
+		</table>
+	</div>
+	<div id="list">
+		<ul>
+			<li><h2>Kader: </h2><p><%=raw @announcement.squad %></p></li>
+			<li><h2>Spielbericht/Sonstiges: </h2>
+			<p><%=raw @announcement.other %></p> </li>
+			<li>  </li>
+			<li> </li>
+		</ul>
+	</div>
 </section>
+<section>
+	
+</section>
+<section>
 
-<section>
-<h2>Wettbewerb:</h2>
-<p><%= @announcement.league %></p>	
-</section>
-
-<section>
-<h2>Uhrzeit:</h2>
-<p><%= @announcement.date.to_s(:short) %></p>
-</section>
-
-<section>
-	<h2>Kader:</h2>
-	<p> <%=raw @announcement.squad %></p>
-</section>
-<section>
-	<h2>Spielbericht/Sonstiges: </h2>
-	<p><%=raw @announcement.other %></p>
 </section>
 
 <% end %>
 
-<% content_for :body_content_right do %>
-  <aside>
-    <h2>Weitere Spiele</h2>
-    <ul id="announcements">
-      <% @announcements.each do |announcement| %>
-        <li>
-          <%= link_to announcement.date.to_s(:short) + ": " + announcement.hometeam + " - " + announcement.awayteam , announcement_path(announcement) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
+
+
 
 <%= render :partial => "/shared/content_page" %>
