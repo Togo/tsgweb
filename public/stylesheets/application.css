@@ -321,3 +321,31 @@ margin: 20px;
 #body_content #announcement_show th,td {
 	padding: 10px;
 }
+
+#body_content #teams_announcement_table  table {
+	text-align: center;
+}
+
+#body_content #teams_announcement_table  tr {
+}
+
+
+#body_content #teams_announcement_table th,td {
+	padding: 5px;
+}
+
+#body_content #teams_announcement_table td.left {
+	border-left: 1px solid; 
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+#body_content #teams_announcement_table td.center {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+#body_content #teams_announcement_table td.right {
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+

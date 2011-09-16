@@ -14,6 +14,7 @@ class TeamsController < ApplicationController
     @coach = Coach.find(@team.coach_id)
     @co_coach = Coach.find(@team.co_coach_id)
     @employee = Employee.find(@team.admin_id)
+    @announcements = Announcement.order('position')
 
     # you can use meta fields from your model instead (e.g. browser_title)
     # by swapping @page for @team in the line below:
@@ -29,5 +30,6 @@ protected
   def find_page
     @page = Page.where(:link_url => "/teams").first
   end
+  
 
 end

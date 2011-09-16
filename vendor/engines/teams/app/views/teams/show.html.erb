@@ -18,6 +18,22 @@
     <li><b>Fussball.de: </b><%= link_to "Fussball.de", @team.fussballde %><br /></li>
 </ul>
 </section>
+
+<ul id="teams_announcement_table">
+	<h2><%= @team.name %> Spielplan Saison 2011/12</h2>
+	 <% @announcements.each do |announcement| %>
+		<% if announcement.teamname ==   @team.name %>
+		
+		<div id="table">
+			<table>
+			<tr><td class="left" width="100px"><%= announcement.date.to_s(:short) %> </td><td class="center" width="280px"><%=  announcement.hometeam  %> - <%= announcement.awayteam %></td><td class="center" width="50px"><%= announcement.goalshome.to_s %> : <%= announcement.goalsaway.to_s %></td><td class="right"><%= link_to "Kader/Spielbericht", announcement_path(announcement.id) %></td></tr>
+
+			</table>
+		</div>
+		<% end %>
+	<% end %>
+ 	
+	
 </div>
 
 <div id="body_content_right_engines_show">
