@@ -6,7 +6,7 @@
 		<ul> 
 					<% @announcement_items.each do |item| %> 
 					<article class="news_item_truncated">
-					        <p><%= link_to item.date.to_s(:short) + "  " + item.hometeam + " - " + item.awayteam + " " + item.goalshome.to_s + ":" + item.goalsaway.to_s + " (" + item.teamname + ")" , announcement_path(item) %></p>
+					        <p><%= link_to item.date.to_s(:short) + "  " + item.league + ":  "+ item.hometeam + " - " + item.awayteam + " " + item.goalshome.to_s + ":" + item.goalsaway.to_s + " (" + item.teamname + ")" , announcement_path(item) %></p>
 					</article> 
 					<% end %>
 				</ul>

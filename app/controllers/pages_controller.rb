@@ -3,10 +3,10 @@ class PagesController < ApplicationController
   # This action is usually accessed with the root path, normally '/'
   def home
      start_date = Date.today - 7
-     end_date = Date.today + 8
+     end_date = Date.today + 14
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
     @news_items = NewsItem.latest(1)
-    @announcement_items = Announcement.where(["date between ? and ? ",start_date,end_date]).order('date ASC')
+    @announcement_items = Announcement.where(["date between ? and ? ",start_date,end_date]).order('date DESC').first(10)
   end
 
 
